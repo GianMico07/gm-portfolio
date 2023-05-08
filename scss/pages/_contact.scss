@@ -1,0 +1,155 @@
+.contact{
+    padding: 6rem 0;
+
+    &__wrapper{
+
+
+        .get-in-touch{
+            hr{
+                width: 113px;
+                border: 2px solid $clr-primary;
+                border-radius: 10px;
+            }
+        
+            h2{
+                margin: 1rem 0;
+
+                span{
+                    color: $clr-primary;
+                }
+            }  
+        }
+
+        .contact-cont{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 4rem 0;
+
+            .contact-details{
+                .info{
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    margin-bottom: 2rem;
+    
+                    i{
+                        font-size: 25px;
+                    }
+                    
+                }
+            }
+    
+            .form{
+                
+
+
+                .name-email{
+                    display: flex;
+                    gap: 1rem;
+                    margin-bottom: 1rem;
+
+                    input{
+                        display: inline-block;
+                        border-style: none;
+                        padding: .8rem;
+                        background-color: transparent;
+                        border: 2px solid $clr-brown;
+                        border-radius: 8px;
+                        color: $clr-white;
+                        width: 270px;
+                        font-family: $ff-primary;
+                    }
+
+                    ::placeholder{
+                        color: $clr-white;
+                    }
+                }
+
+                textarea{
+                    display: block;
+                    border-style: none;
+                    padding: .8rem;
+                    background-color: transparent;
+                    border: 2px solid $clr-brown;
+                    border-radius: 8px;
+                    color: $clr-white;
+                    width: 95%;
+                    font-family: $ff-primary;                  
+                }
+
+                ::placeholder{
+                    color: $clr-white;
+                }
+
+                button{
+                    padding: 1rem 1.6rem;
+                    border-style: none;
+                    background-color: $clr-brown;
+                    border-radius: 8px;
+                    margin-top: 1rem;
+                    float: right;
+                    font-family: $ff-primary;
+                    transition: all .3s ease;
+                    cursor: pointer;
+                }
+
+                button:hover{
+                    background-color: $clr-primary;
+                    transition: all .3s ease;
+                }
+            }
+        }
+    }
+}
+
+.footer2{
+    border-top: 1px solid $clr-white;
+
+    .logo{
+        
+
+        h2{
+            margin-bottom: 1rem;
+            span{
+                color: $clr-primary;
+            }
+        }
+
+        p{
+            color: #7E7E7E;
+            line-height: 26px;
+        }
+    }
+
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4rem 0;
+
+        .follow-me{
+            p{
+                color: #7E7E7E;
+                margin-bottom: 1rem;
+            }
+
+            .social-media{
+                display: flex;
+                
+                gap: 2rem;
+    
+                i{
+                    font-size: 36px;
+                    color: #7E7E7E;
+                    transition: all .3s ease;
+                }
+
+                i:hover{
+                    color: $clr-primary;
+                    transition: all .3s ease;
+                }
+            }
+        }
+    }
+}

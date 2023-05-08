@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;   
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 30%;
+}
+
+body{
+    font-family: $ff-primary;
+    overflow-x: hidden;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+h2{
+    font-size: 37px;
+    line-height: 37px;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+h4{
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+}
+
+h5{
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+}
+
+h6{
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 400;
+}
+
+p{
+    font-size: 16px;
+    line-height: 17px;
+    font-weight: 400;
+}

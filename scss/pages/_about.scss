@@ -1,0 +1,606 @@
+.objective{
+    position: relative;
+
+    img{
+        position: absolute;
+        right: 0;
+        top: 60px;
+    }
+
+    &__wrapper{
+        padding-top: 8rem;
+        padding-bottom: 5rem;
+
+        .about-me{
+            gap: 1rem;
+
+            hr{
+                width: 73px;
+                border: 2px solid $clr-primary;
+                border-radius: 10px;
+            }
+        }
+
+        h1{
+            margin: 2rem 0;
+        }
+
+        p{
+            width: 657px;
+            line-height: 26px;
+        }
+
+        .line-break{
+            justify-content: left;
+            margin-top: 4rem;
+
+            hr{
+                width: 693px;
+                border: 2px solid $clr-primary;
+                border-radius: 10px;
+            }
+        }
+
+        .buttons{
+            margin-top: 2rem;
+            display: flex;
+            gap: 1rem;
+
+            a{
+                padding: 1rem 2rem;
+                background-color: $clr-primary;
+                border: 2px solid $clr-primary;
+                display: inline-block;
+                border-radius: 5px;
+                font-weight: 500;
+                transition: .3s ease;
+
+                &:hover{
+                    background-color: #ff4410;
+                    border: 2px solid #ff4410;
+                    transition: .3s ease;
+                }
+            }
+
+            a:nth-child(2){
+                background: transparent;
+                border: 2px solid $clr-primary;
+                transition: .3s ease;
+
+                &:hover{
+                    background-color: $clr-primary;
+                    transition: .3s ease;
+                }
+            }
+        }
+        
+    }
+}
+
+.info-skills{
+    &__wrapper{
+        gap: 10rem;
+
+        .personal-info{
+            h2{
+                margin-bottom: 2rem;
+            }
+
+            &__cont{
+                gap: 7rem;
+
+                .info{
+                    padding-bottom: 2.2rem;
+
+                    h3{
+                        color: $clr-primary;
+                    }
+                }     
+            }
+        }
+
+        .skills{
+            h2{
+                margin-bottom: 2rem;
+            }
+
+            &__cont{
+                gap: 2rem;
+                .skill{
+                    gap: 1rem;
+                    padding-bottom: 1.8rem;
+                    i{
+                        font-size: 40px;
+                        color: #FDB344;
+                    }
+
+                    h3{
+                        color: $clr-primary;
+                        margin-bottom: 0.5rem;
+                    }
+                    .rectangle{
+                        display: flex;
+                        align-items: center;
+                        width: 200px;
+                        padding: 3px;
+                        background-color: white;
+                        border-radius: 10px;
+    
+                        hr{
+                            width: 130px;
+                            border: 3px solid $clr-brown;
+                            border-radius: 10px;
+                        }
+                    }
+
+                    .stat{
+                        .progress-bar{
+                            .rectangle{
+                                .stat2{
+                                    width: 164px;
+                                }
+
+                                .stat3{
+                                    width: 164px;
+                                }
+
+                                .stat4{
+                                    width: 153px;
+                                }
+
+                                .stat5{
+                                    width: 174px;
+                                }
+
+                                .stat6{
+                                    width: 99px;
+                                }
+                            }
+                        }
+                    }
+                }
+            
+                
+            }
+        }
+    }
+}
+
+.edu-attain{
+    .line-break{
+        hr{
+            width: 693px;
+            border: 2px solid $clr-brown;
+            border-radius: 10px;
+            margin: 4rem 0;
+        }
+    }
+
+    h2{
+        text-align: right;
+    }
+
+    &__wrapper{
+        padding: 4rem 0;
+
+
+        .info-cont{
+            gap: 2rem;
+    
+            .circle-indicator{
+                display: inline-block;
+                position: relative;
+        
+                .circle1,.circle2,.circle3{
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    background-color: white;
+                    border-radius: 99px;
+                }
+        
+                .circle1{
+                    top: 0;
+                    left: -9px;
+                }
+        
+                .circle2{
+                    top: 150px;
+                    left: -9px;
+                }
+        
+                .circle3{
+                    bottom: 115px;
+                    left: -9px;
+                }
+        
+                .vl{
+                    border-left: 3px solid $clr-primary;
+                    height: 279px;
+                }
+            }
+
+
+            .info{
+                flex: 1;
+
+                h3{
+                    color: $clr-primary;
+                    margin-bottom: 1rem;
+                }
+
+                p{
+                    line-height: 20px;
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+
+                .year{
+                    color: $clr-white;
+                }
+            }
+
+            .secondary{
+                margin-top: 2.1rem;
+            }
+
+            .primary{
+                margin-top: 2rem;
+            }
+
+            
+        }
+    }
+}
+
+
+.attended{
+    &__wrapper{
+        h2{
+            margin-bottom: 4rem;
+        }
+
+        .seminars-cont{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+
+
+            .seminars{
+
+                h3{
+                    color: $clr-primary;
+                    margin-bottom: 1rem;
+                }
+    
+                p{
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
+
+.references{
+    &__wrapper{
+        padding: 1rem 0;
+
+
+        .line-break{
+            justify-content: right; 
+
+            hr{
+                width: 693px;
+                border: 2px solid $clr-brown;
+                border-radius: 10px;
+                margin: 4rem 0;      
+                      
+            }
+        }
+
+        h2{
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .my-ref{
+            justify-content: space-evenly;
+            padding: 8rem 0;
+
+            .my-ref-cont{
+                gap: 2rem;
+    
+                h3{
+                    color: $clr-primary;
+                }
+    
+                p{
+                    font-size: 16px;
+                    line-height: 26px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+.footer2{
+    border-top: 1px solid $clr-white;
+    margin-top: 5rem;
+
+    .logo{
+        
+
+        h2{
+            margin-bottom: 1rem;
+            span{
+                color: $clr-primary;
+            }
+        }
+
+        p{
+            color: #7E7E7E;
+            line-height: 26px;
+        }
+    }
+
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4rem 0;
+
+        .follow-me{
+            p{
+                color: #7E7E7E;
+                margin-bottom: 1rem;
+            }
+
+            .social-media{
+                display: flex;
+                
+                gap: 2rem;
+    
+                i{
+                    font-size: 36px;
+                    color: #7E7E7E;
+                    transition: all .3s ease;
+                }
+
+                i:hover{
+                    color: $clr-primary;
+                    transition: all .3s ease;
+                }
+            }
+        }
+    }
+}
+
+
+.my-expertise{
+
+    h2{
+        margin-bottom: 4rem;
+    }
+
+    &__wrapper{
+
+        i{
+            font-size: 46px;
+            color:#FDB344;
+        }
+
+        
+
+        h3{
+            color: $clr-primary;
+        }
+
+        .skill{
+            gap: 1rem;
+            margin-bottom: 2rem;
+
+            .name{
+                margin-bottom: .5rem;
+            }
+
+            .php{
+                font-size: 30px;
+            }
+        }
+
+        .progress{
+            .line{
+                width: 423px;
+                height: 12px;
+                background-color: white;
+                border-radius: 99px;
+
+                .line1{
+                    width: 312px;
+                    height: 6px;
+                    background-color: $clr-primary;
+                    border-radius: 99px;
+                    margin-left: .2rem;
+                }
+            }
+        }
+    }
+}
+
+.services{
+    .line-break{
+        justify-content: right;
+        margin-top: 4rem;
+
+        hr{
+            width: 693px;
+            border: 2px solid $clr-primary;
+            border-radius: 10px;
+        }
+    }
+
+    &__wrapper{
+        padding: 5rem 0;
+
+
+        .my-svc-cont{
+            display: flex;
+            justify-content: center;
+        }
+
+        .littletxt{
+            gap: 1rem;
+
+            hr{
+                width: 65px;
+                border: 2px solid $clr-primary;
+                border-radius: 10px;
+            }
+        }
+
+        h2{
+            margin: .7rem 0;
+        }
+    }
+
+
+    .svc-list-cont{
+        display: flex;
+        gap: 1.5rem;
+        margin-top: 4rem;
+
+
+        .svc-list{
+            width: 367px;
+            background-color: #343232;
+            padding: 2rem;
+            border-radius: 15px;
+
+           .title{
+            gap: 1rem;
+            align-items: center;
+            
+
+            i{
+                font-size: 36px;
+                color: #FDB344;
+            }
+           }
+
+           h3{
+            color: $clr-primary;
+           }
+
+           p{
+            margin-top: 1rem;
+            font-size: 14px;
+            line-height: 22px;
+           }
+        }
+    }
+}
+
+.latest-projects{
+
+    h2{
+        margin-bottom: 1rem;
+    }
+
+    .line-break{
+        justify-content: left;
+        margin: 4rem 0;
+
+        hr{
+            width: 693px;
+            border: 2px solid $clr-primary;
+            border-radius: 10px;
+        }
+    }
+
+    &__wrapper{
+        padding: 4rem 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.5rem;
+
+        .card{
+            transition: all 0.3s ease;
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            
+            h3,p{
+                color: #2B2B2B;
+            }
+
+            h3{
+                margin-bottom: 1rem;
+            }
+
+            img{
+                object-fit: cover;
+                width: 120%;
+                object-position: center;
+
+                
+            }
+
+            .details-cont{
+                padding: 2rem 1.5rem;
+            }
+
+            .buttons{
+                margin-top: 2rem;
+                display: flex;
+                justify-content: space-between;
+    
+                a{
+                    padding: .9rem 1.7rem;
+                    background-color: $clr-primary;
+                    border: 2px solid $clr-primary;
+                    display: inline-block;
+                    border-radius: 5px;
+                    font-weight: 500;
+                    transition: .3s ease;
+    
+                    &:hover{
+                        background-color: #ff4410;
+                        border: 2px solid #ff4410;
+                        transition: .3s ease;
+                    }
+                }
+
+                .demo{
+                    font-weight: 700;
+                }
+
+                .src-code{
+                    color: #2B2B2B;
+                    font-weight: 700;
+                }
+    
+                a:nth-child(2){
+                    background: transparent;
+                    border: 2px solid $clr-primary;
+                    transition: .3s ease;
+    
+                    &:hover{
+                        color: white;
+                        background-color: $clr-primary;
+                        transition: .3s ease;
+                    }
+                }
+            }
+
+            &:hover{
+                transform: scale(1.03);
+                transition: all 0.3s ease;
+            }
+        }
+
+        
+    }
+}
