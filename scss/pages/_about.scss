@@ -595,6 +595,9 @@
         img{
             width: 100%;
             border-radius: 15px;
+            aspect-ratio: 3/2;
+            object-fit: cover;
+            object-position: top;
         }
     }
 
@@ -751,5 +754,44 @@
             }
         }
     }
+}
+
+.tns-nav{
+    text-align: center;
+}
+
+.tns-nav button{
+    display: none;
+}
+
+.tns-nav .tns-nav-active{
+    background-color: gray;
+}
+
+
+.tns-controls{
+    position: relative;
+}
+
+.tns-controls button:first-child{
+    position: absolute;
+    left: 0;
+    top: 13rem;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: gray;
+    z-index: 1;
+}
+
+.tns-controls button:last-child{
+    position: absolute;
+    right: 0;
+    top: 13rem;
+    background: none;
+    border: none;
+    z-index: 1;
+    font-size: 2rem;
+    color: gray;
 }
 

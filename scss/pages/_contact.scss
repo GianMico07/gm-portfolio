@@ -13,11 +13,16 @@
         
             h2{
                 margin: 1rem 0;
+                font-size: 48px;
 
                 span{
                     color: $clr-primary;
                 }
             }  
+
+            h5{
+                font-size: 16px;
+            }
         }
 
         .contact-cont{
@@ -35,6 +40,10 @@
     
                     i{
                         font-size: 25px;
+                    }
+
+                    h5{
+                        line-height: 20px;
                     }
                     
                 }
@@ -54,8 +63,8 @@
                         border-style: none;
                         padding: .8rem;
                         background-color: transparent;
-                        border: 2px solid $clr-brown;
-                        border-radius: 8px;
+                        border: 2px solid $clr-primary;
+                        border-radius: 5px;
                         color: $clr-white;
                         width: 270px;
                         font-family: $ff-primary;
@@ -71,8 +80,8 @@
                     border-style: none;
                     padding: .8rem;
                     background-color: transparent;
-                    border: 2px solid $clr-brown;
-                    border-radius: 8px;
+                    border: 2px solid $clr-primary;
+                    border-radius: 5px;
                     color: $clr-white;
                     width: 95%;
                     font-family: $ff-primary;                  
@@ -85,8 +94,8 @@
                 button{
                     padding: 1rem 1.6rem;
                     border-style: none;
-                    background-color: $clr-brown;
-                    border-radius: 8px;
+                    background-color: $clr-primary;
+                    border-radius: 5px;
                     margin-top: 1rem;
                     float: right;
                     font-family: $ff-primary;
