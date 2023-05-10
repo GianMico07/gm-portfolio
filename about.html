@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./dist/css/main.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css">
     <title>About | GM Portfolio</title>
 </head>
 <body>
@@ -334,6 +335,44 @@
             <div class="my-portfolio__wrapper">
                 <h2>My Portfolio</h2>
                 <p>in Photography and Videography</p>
+
+                <div class="tab-cont">
+                    <button class="all-tab">ALL</button>
+                    <button class="photo-tab">PHOTOS</button>
+                    <button class="video-tab">VIDEOS</button>
+                </div>
+
+                <ul>
+                    <li>
+                        <a href="img/img1.jpg" data-lightbox="piano"><img src="/img/img1.jpg" alt="">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="img/img2.jpg" data-lightbox="piano"><img src="/img/img2.jpg" alt="">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="img/img3.jpg" data-lightbox="piano"><img src="/img/img3.jpg" alt="">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="img/img1.jpg" data-lightbox="piano"><img src="/img/img1.jpg" alt="">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="img/img1.jpg" data-lightbox="piano"><img src="/img/img1.jpg" alt="">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="img/img1.jpg" data-lightbox="piano"><img src="/img/img1.jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
@@ -463,5 +502,15 @@
             </div>
         </div>
     </footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+
+<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+</script>
 </body>
 </html>
