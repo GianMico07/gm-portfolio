@@ -71,28 +71,29 @@
                         <div class="percent">
                             <div class="name d--flex justify--between">
                                 <h3>HTML</h3>
-                                <p>85%</p>
+                                <div class="progressValue"><p id="progress">85</p> <p>%</p></div>
                             </div>
 
                             <div class="progress">
                                 <div class="line d--flex align--center">
-                                    <div class="line1"></div>
+                                    <div id="line1"></div>
                                 </div>
                             </div>
                         </div>
                     </div> 
+
 
                     <div class="skill d--flex">
                         <i class="fa-brands fa-css3-alt"></i>
                         <div class="percent">
                             <div class="name d--flex justify--between">
                                 <h3>CSS</h3>
-                                <p>85%</p>
+                                <div class="progressValue"><p id="progress2">80</p> <p>%</p></div>
                             </div>
 
                             <div class="progress">
                                 <div class="line d--flex align--center">
-                                    <div class="line1"></div>
+                                    <div id="line2"></div>
                                 </div>
                             </div>
                         </div>
@@ -103,12 +104,12 @@
                         <div class="percent">
                             <div class="name d--flex justify--between">
                                 <h3>PHP</h3>
-                                <p>85%</p>
+                                <div class="progressValue"><p id="progress3">50</p> <p>%</p></div>
                             </div>
 
                             <div class="progress">
                                 <div class="line d--flex align--center">
-                                    <div class="line1"></div>
+                                    <div id="line3"></div>
                                 </div>
                             </div>
                         </div>
@@ -121,12 +122,12 @@
                         <div class="percent">
                             <div class="name d--flex justify--between">
                                 <h3>USER INTERFACE DESIGN</h3>
-                                <p>85%</p>
+                                <div class="progressValue"><p id="progress4">70</p> <p>%</p></div>
                             </div>
 
                             <div class="progress">
                                 <div class="line d--flex align--center">
-                                    <div class="line1"></div>
+                                    <div id="line4"></div>
                                 </div>
                             </div>
                         </div>
@@ -137,12 +138,12 @@
                         <div class="percent">
                             <div class="name d--flex justify--between">
                                 <h3>PC TROUBLESHOOTING</h3>
-                                <p>85%</p>
+                                <div class="progressValue"><p id="progress5">80</p> <p>%</p></div>
                             </div>
 
                             <div class="progress">
                                 <div class="line d--flex align--center">
-                                    <div class="line1"></div>
+                                    <div id="line5"></div>
                                 </div>
                             </div>
                         </div>
@@ -153,12 +154,12 @@
                         <div class="percent">
                             <div class="name d--flex justify--between">
                                 <h3>PHOTO/VIDEO EDITING</h3>
-                                <p>85%</p>
+                                <div class="progressValue"><p id="progress6">80</p> <p>%</p></div>
                             </div>
 
                             <div class="progress">
                                 <div class="line d--flex align--center">
-                                    <div class="line1"></div>
+                                    <div id="line6"></div>
                                 </div>
                             </div>
                         </div>
@@ -166,6 +167,35 @@
                 </div>
             </div>
         </div>
+
+        <script>
+            // Get the progress value from the paragraph tag
+            var progressValue = document.getElementById('progress').innerHTML;
+            var progressValue2 = document.getElementById('progress2').innerHTML;
+            var progressValue3 = document.getElementById('progress3').innerHTML;
+            var progressValue4 = document.getElementById('progress4').innerHTML;
+            var progressValue5 = document.getElementById('progress5').innerHTML;
+            var progressValue6 = document.getElementById('progress6').innerHTML;
+        
+            // Set the width of the progress bar based on the value
+            var progressBar = document.getElementById('line1');
+            progressBar.style.width = progressValue + '%';
+        
+            var progressBar = document.getElementById('line2');
+            progressBar.style.width = progressValue2 + '%';
+
+            var progressBar = document.getElementById('line3');
+            progressBar.style.width = progressValue3 + '%';
+
+            var progressBar = document.getElementById('line4');
+            progressBar.style.width = progressValue4 + '%';
+
+            var progressBar = document.getElementById('line5');
+            progressBar.style.width = progressValue5 + '%';
+
+            var progressBar = document.getElementById('line6');
+            progressBar.style.width = progressValue6 + '%';
+        </script>
     </section>
 
 
@@ -338,7 +368,7 @@
 
             <div class="my-portfolio__wrapper">
                 <h2 data-aos="fade-left" data-aos-duration="800">My Portfolio</h2>
-                <p data-aos="fade-left" data-aos-duration="800">in Photography and Videography</p>
+                <p data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">in Photography and Videography</p>
 
                 <div class="tab-cont">
                     <button class="all-tab">ALL</button>
@@ -617,6 +647,8 @@
 <script>
     AOS.init();
 </script>
+
+
 
 
 </body>
