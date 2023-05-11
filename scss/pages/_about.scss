@@ -456,7 +456,7 @@
         gap: 1.5rem;
 
         .card{
-            transition: all 0.3s ease;
+            transition: all 0.5s ease ;
             background-color: white;
             border-radius: 15px;
             overflow: hidden;
@@ -531,8 +531,8 @@
             }
 
             &:hover{
-                transform: scale(1.03);
-                transition: all 0.3s ease;
+                transform: scale(1.03) !important;
+                transition: all 0.5s ease !important;
             }
         }
 

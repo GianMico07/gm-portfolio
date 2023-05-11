@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./dist/css/main.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>GM Portfolio</title>
 </head>
 <body>
@@ -32,16 +33,16 @@
         <section class="home">
             <div class="container">
                 <div class="home__wrapper d--flex justify--between align--center">
-                    <div class="welcome__cont">
+                    <div class="welcome__cont" data-aos="fade-right" data-aos-duration="800">
                         <hr class="line-welcome">
                         <h2>Hello There,</h2>
                         <h1>I'm Gian <span>Mico</span></h1>
                         <p>I’m a freelance Website Developer and UX/UI Designer</p>
                         <a class="btn bg--primary" href="">About Me</a>
-                        <img src="/img/element1.png" alt="">
+                        <img src="/img/element1.png" alt="" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
                     </div>
     
-                    <img src="img/prof.png" alt="">
+                    <img src="img/prof.png" alt="" data-aos="fade-left" data-aos-duration="800">
                 </div>
             </div>
         </section>
@@ -49,7 +50,7 @@
         
         
         <footer class="footer">       
-            <img src="/img/Element 2.svg" alt="">
+            <img src="/img/Element 2.svg" alt="" data-aos="fade-up" data-aos-duration="800">
                 
             <div class="container">
                 <div class="footer__wrapper d--flex">
@@ -66,7 +67,11 @@
         </footer>
     </div>
     
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <script>
+        AOS.init();
+      </script>
    
 </body>
 </html>
