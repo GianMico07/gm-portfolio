@@ -12,11 +12,19 @@ html, body{
             span{
                 color: $clr-primary;
             }
+
+            @include mediaQuery(){            
+               font-size: 37px;    
+            }
         }
 
         nav ul{
             display: flex;
             gap: 3rem;
+
+            @include mediaQuery(){            
+                display: none;        
+            }
         }
 
         .active{
@@ -43,24 +51,52 @@ html, body{
                 color: $clr-primary;
             }
 
+            h1{
+                @include mediaQuery(){            
+                    font-size: 48px;     
+                }
+            }
+
             h2{
                 margin: 1.5rem 0;
+                
+                @include mediaQuery(){            
+                    font-size: 20px;  
+                    margin-top: .5rem;  
+                    margin-bottom: 0; 
+                }
             }
 
             p{
                 margin: 1rem 0;
+
+                @include mediaQuery(){            
+                    margin: 0;      
+                }
             }
 
             a{
                 margin-top: 2rem;
             }
 
-            img{
+            .element1{
                 position: absolute;
                 top: -176px;
                 left: 256px;
+
+                @include mediaQuery(){            
+                    width: 90px;    
+                    top: -68px;
+                left: 166px;  
+                }
             }
         }  
+
+        .img-prof{
+            @include mediaQuery(){            
+                    display: none;        
+            }
+        }
     }
 }
 
@@ -69,21 +105,13 @@ html, body{
 
     .element2{
         position: absolute;
-        width: 500px;
-        height: 500px;
-        background-color: white;
-        border-radius: 999px;
-        bottom: 0px;
-        left: 0;
-        overflow-y: hidden;  
-    }
-
-    img{
-        position: absolute;
         bottom: 0;
         left: 0;
         width: 550px;
 
+            @include mediaQuery(){            
+                    display: none;    
+            }
         
     }
 
@@ -104,7 +132,51 @@ html, body{
                 color: $clr-primary;
                 transition: all .3s ease;
             }
+        }    
+    }
+}
+
+
+@media (min-width:768px){
+    .container{
+        padding: 0 2rem;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .img-prof,.element2{
+        display:none;
+    }
+
+
+    .home{
+        &__wrapper{
+            height: 80vh;
+            padding: 0;
         }
-        
+    }
+}
+
+@media (min-width: 992px){
+    .img-prof{
+        display: block;
+        width: 45%;
+    }
+
+    nav{
+        display: block;
+    }
+}
+
+
+
+@media (min-width:1200px){
+    footer{
+        .element2{
+            display: block;
+           
+        }
     }
 }

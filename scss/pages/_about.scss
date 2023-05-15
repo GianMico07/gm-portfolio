@@ -352,7 +352,7 @@
                 border-radius: 99px;
 
                 #line1,#line2,#line3,#line4,#line5,#line6{
-                    animation: progress 2000ms ease 1;
+                    animation: progress 5000ms ease 1;
                     height: 6px;
                     background-color: $clr-primary;
                     border-radius: 99px;
@@ -604,6 +604,10 @@
             padding: 4rem 0;
         }
 
+        .images{
+            // display: none;
+        }
+
         img{
             width: 100%;
             border-radius: 15px;
@@ -807,3 +811,38 @@
     color: gray;
 }
 
+
+// @media (min-width: 468px){
+//     .objective{
+//         &__wrapper{
+//             padding-top: 3rem;
+
+//             p{
+//                 width: 370px;
+//                 font-size: 14px;
+//             }
+//         }
+//     }
+
+//     .my-expertise{
+//         &__wrapper{
+//             flex-direction: column;
+
+//             .fa-pen-ruler,.fa-screwdriver-wrench,.fa-camera{
+//                 font-size: 38px;
+//             }
+//         }
+//     }
+
+//     .svc-list-cont{
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//     }
+
+//     .latest-projects{
+//         &__wrapper{
+//             grid-template-columns: 1fr;
+//         }
+//     }
+// }

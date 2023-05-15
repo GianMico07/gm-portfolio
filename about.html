@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <script type="text/javascript" src="./loader.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
+    <link rel="text/javascript" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js">
     <title>About | GM Portfolio</title>
 </head>
 <body>
@@ -195,6 +197,8 @@
 
             var progressBar = document.getElementById('line6');
             progressBar.style.width = progressValue6 + '%';
+
+            
         </script>
     </section>
 
@@ -376,57 +380,87 @@
                     <button class="video-tab">VIDEOS</button>
                 </div>
 
-                <ul>
-                    <li>
+                <ul class="image-cont">
+                    <li class="images">
                         <a href="img/img1.jpg" data-lightbox="piano"><img src="/img/img1.jpg" alt="">
                         </a>
                     </li>
 
-                    <li>
+                    <li class="images">
                         <a href="img/img2.jpg" data-lightbox="piano"><img src="/img/img2.jpg" alt="">
                         </a>
                     </li>
 
-                    <li>
+                    <li class="images">
                         <a href="img/img3.jpg" data-lightbox="piano"><img src="/img/img3.jpg" alt="">
                         </a>
                     </li>
 
-                    <li>
+                    <li class="images">
                         <a href="img/img4.jpg" data-lightbox="piano"><img src="/img/img4.jpg" alt="">
                         </a>
                     </li>
 
-                    <li>
+                    <li class="images">
                         <a href="img/img5.jpg" data-lightbox="piano"><img src="/img/img5.jpg" alt="">
                         </a>
                     </li>
 
-                    <li>
+                    <li class="images">
                         <a href="img/img6.jpg" data-lightbox="piano"><img src="/img/img6.jpg" alt="">
                         </a>
                     </li>
 
-                    <li>
+                    <li class="images">
                         <a href="img/img7.jpg" data-lightbox="piano"><img src="/img/img7.jpg" alt="">
                         </a>
                     </li>
 
-                    <li>
+                    <li class="images">
                         <a href="img/img8.jpg" data-lightbox="piano"><img src="/img/img8.jpg" alt="">
                         </a>
                     </li>
 
-                    <li>
+                    <li class="images">
                         <a href="img/img9.jpg" data-lightbox="piano"><img src="/img/img9.jpg" alt="">
                         </a>
                     </li>
 
-                    <li>
-                        <a href="img/img10.jpg" data-lightbox="piano"><img src="/img/img10.jpg" alt="">
+                    <li class="images">
+                        <a href="./img/img10.jpg" data-fancybox="gallery">
+                            <img src="./img/img10.jpg" alt="" />
                         </a>
+
+                        <script>
+                            $('[data-fancybox="gallery"]').fancybox({
+	// Options will go here
+});
+
+$('[data-fancybox="gallery"]').fancybox({
+	// Options will go here
+});
+                        </script>
                     </li>
                 </ul>
+
+                <button id="more-btn">More</button>
+
+                <script>
+                    let loadMoreBtn = document.querySelector('#more-btn');
+                    let currentItem = 6;
+            
+                    loadMoreBtn.onclick = () =>{
+                    let boxes = [...document.querySelectorAll('.image-cont .images')];
+                    for (var i = currentItem; i < currentItem + 6; i++){
+                        boxes[i].style.display = 'block';
+                    }
+                    currentItem += 6;
+            
+                    if(currentItem >= boxes.length){
+                        loadMoreBtn.style.display = 'none';
+                    }
+                    }
+                </script>
             </div>
         </div>
     </section>
@@ -648,7 +682,8 @@
     AOS.init();
 </script>
 
-
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="jquery.fancybox.min.js"></script>
 
 
 </body>
