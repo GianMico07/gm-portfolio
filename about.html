@@ -10,8 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <script type="text/javascript" src="./loader.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
-    <link rel="text/javascript" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js">
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
     <title>About | GM Portfolio</title>
 </head>
 <body>
@@ -375,12 +378,11 @@
                 <p data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">in Photography and Videography</p>
 
                 <div class="tab-cont">
-                    <button class="all-tab">ALL</button>
-                    <button class="photo-tab">PHOTOS</button>
-                    <button class="video-tab">VIDEOS</button>
+                    <button class="tab-button active" onclick="openTab(event, 'tab1')">PHOTOS</button>
+                    <button class="tab-button" onclick="openTab(event, 'tab2')">VIDEOS</button>
                 </div>
 
-                <ul class="image-cont">
+                <ul class="image-cont" id="tab1" style="display:grid">
                     <li class="images">
                         <a href="img/img1.jpg" data-lightbox="piano"><img src="/img/img1.jpg" alt="">
                         </a>
@@ -425,23 +427,44 @@
                         <a href="img/img9.jpg" data-lightbox="piano"><img src="/img/img9.jpg" alt="">
                         </a>
                     </li>
+                </ul>
 
+                <ul class="image-cont" id="tab2">
                     <li class="images">
-                        <a href="./img/img10.jpg" data-fancybox="gallery">
-                            <img src="./img/img10.jpg" alt="" />
-                        </a>
+                        <a href="./img/what.mp4" data-fancybox data-caption="Single image">
+                            <img src="./img/img10.jpg" />
+                          </a>
 
-                        <script>
-                            $('[data-fancybox="gallery"]').fancybox({
-	// Options will go here
-});
-
-$('[data-fancybox="gallery"]').fancybox({
-	// Options will go here
-});
-                        </script>
+                          <script>
+                            Fancybox.bind("[data-fancybox]", {
+                            // Your custom options
+                            });
+                          </script>
                     </li>
                 </ul>
+
+                <script>
+                   function openTab(evt, tabName) {
+                    var i, tabContent, tabButton;
+
+                    // Hide all tab content
+                    tabContent = document.getElementsByClassName("image-cont");
+                    for (i = 0; i < tabContent.length; i++) {
+                        tabContent[i].style.display = "none";
+                    }
+
+                    // Remove "active" class from all tab buttons
+                    tabButton = document.getElementsByClassName("tab-button");
+                    for (i = 0; i < tabButton.length; i++) {
+                        tabButton[i].className = tabButton[i].className.replace(" active", "");
+                    }
+
+                    // Show the selected tab content and mark the button as active
+                    document.getElementById(tabName).style.display = "grid";
+                    evt.currentTarget.className += " active";
+                    }
+
+                </script>
 
                 <button id="more-btn">More</button>
 
