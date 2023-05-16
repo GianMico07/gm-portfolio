@@ -853,7 +853,7 @@ html, body{
 
 
 
-@media (max-width: 425px){
+@media only screen and (max-width: 425px){
     .objective{
         &__wrapper{
             p{
@@ -893,7 +893,7 @@ html, body{
  
 }
 
-@media (max-width: 375px){
+@media only screen and (max-width: 375px){
     .objective{
         &__wrapper{
             p{
@@ -976,7 +976,6 @@ html, body{
     }
 
     .footer2{
-        margin-top: 1rem;
         .footer2__wrapper{
             display: grid;
             padding: 1.5rem 0;
@@ -989,13 +988,13 @@ html, body{
     }
 }
 
-@media (max-width: 768px){
+@media only screen and (max-width: 768px){
     .my-expertise{
-        .my-expertise__wrapper{
-            justify-content: space-between;
+        &__wrapper{
+            gap: 2rem;
 
             .percent{
-                width: 270px;
+                width: 250px !important;
 
                 .line{
                     width: 100%;
@@ -1062,7 +1061,7 @@ html, body{
     }
 }
 
-@media (max-width:1024px){
+@media only screen and (max-width:1024px){
     .my-expertise{
         &__wrapper{
             gap: 2rem;
@@ -1096,10 +1095,9 @@ html, body{
             }
         }
     }
-
 }
 
-@media (min-width: 1200px){
+@media only screen and (min-width: 1200px){
     .latest-projects{
         &__wrapper{
             grid-template-columns: 1fr 1fr 1fr;
@@ -1112,3 +1110,4 @@ html, body{
         }
     }
 }
+
