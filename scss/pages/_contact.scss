@@ -163,3 +163,23 @@
         }
     }
 }
+
+
+@media (max-width:768px){
+    .contact-cont{
+        flex-direction: column;
+        gap: 2rem;
+
+        .contact-details{
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            
+            .element5{
+                img{
+                    width: 370px;
+                }
+            }
+        }
+    }
+}
