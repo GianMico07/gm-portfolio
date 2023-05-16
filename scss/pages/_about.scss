@@ -597,6 +597,16 @@
             }
         }
 
+        .tab-cont{
+            button{
+                transition: all .3s ease;
+            }
+            .active{
+                color: $clr-primary;
+                transition: all .3s ease;
+            }
+        }
+
 
         ul{
             display: grid;
@@ -830,37 +840,3 @@
 }
 
 
-// @media (min-width: 468px){
-//     .objective{
-//         &__wrapper{
-//             padding-top: 3rem;
-
-//             p{
-//                 width: 370px;
-//                 font-size: 14px;
-//             }
-//         }
-//     }
-
-//     .my-expertise{
-//         &__wrapper{
-//             flex-direction: column;
-
-//             .fa-pen-ruler,.fa-screwdriver-wrench,.fa-camera{
-//                 font-size: 38px;
-//             }
-//         }
-//     }
-
-//     .svc-list-cont{
-//         flex-direction: column;
-//         justify-content: center;
-//         align-items: center;
-//     }
-
-//     .latest-projects{
-//         &__wrapper{
-//             grid-template-columns: 1fr;
-//         }
-//     }
-// }
