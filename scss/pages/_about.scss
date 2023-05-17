@@ -13,11 +13,17 @@ html, body{
     align-items: center;
     background-color: $clr-gray; /* Background color for the preloader */
     z-index: 9999; /* Adjust z-index as needed */
+    transition: opacity 0.5s ease-out;
   }
   
   #preloader img {
     width: 150px; /* Adjust the size of the preloader GIF */
     height: auto;
+  }
+  
+  #preloader.hide {
+    opacity: 0;
+    pointer-events: none; /* Disable pointer events for hidden preloader */
   }
 
 .objective{

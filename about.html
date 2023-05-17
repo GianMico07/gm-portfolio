@@ -716,9 +716,11 @@
     <script>
         // JavaScript code to hide the preloader once the page is loaded
         window.addEventListener('load', function () {
-          var preloader = document.getElementById('preloader');
-          preloader.style.display = 'none';
-        });
+  var preloader = document.getElementById('preloader');
+  preloader.classList.add('hide');
+});
+
+        
       </script>
 
 
