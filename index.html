@@ -11,6 +11,10 @@
 </head>
 <body>
 
+    <div id="preloader">
+        <img src="./img/loader.gif" alt="Loading...">
+      </div>
+
     <div class="test">
         <header class="header">
             <div class="container">
@@ -25,6 +29,18 @@
                             <li><a class="btn1 bg--brown" href="/about.html">About Me</a></li>
                             <li><a class="btn1 bg--brown" href="/contact.html">Contact</a></li>
                         </ul>
+
+                        <div class="mobile-nav" onclick="myFunction(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                          </div>
+
+                          <script>
+                            function myFunction(x) {
+                              x.classList.toggle("change");
+                            }
+                        </script>
                     </nav>
                 </div>
             </div>
@@ -72,6 +88,14 @@
     <script>
         AOS.init();
       </script>
+
+<script>
+    // JavaScript code to hide the preloader once the page is loaded
+    window.addEventListener('load', function () {
+      var preloader = document.getElementById('preloader');
+      preloader.style.display = 'none';
+    });
+  </script>
    
 </body>
 </html>

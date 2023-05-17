@@ -2,6 +2,28 @@ html, body{
     background-color: $clr-gray;
 }
 
+.test{
+    height: 100vh;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $clr-gray; /* Background color for the preloader */
+    z-index: 9999; /* Adjust z-index as needed */
+  }
+  
+  #preloader img {
+    width: 150px; /* Adjust the size of the preloader GIF */
+    height: auto;
+  }
+
 
 .header{
     &__wrapper{
@@ -16,6 +38,10 @@ html, body{
             @include mediaQuery(){            
                font-size: 37px;    
             }
+        }
+
+        .mobile-nav{
+            display: none;
         }
 
         nav ul{
@@ -35,7 +61,7 @@ html, body{
 
 .home{
     &__wrapper{
-        padding: 8rem 0;
+        padding: 7rem 0;
 
 
         .line-welcome{
@@ -142,9 +168,7 @@ html, body{
         padding: 0 2rem;
     }
 
-    nav{
-        display: none;
-    }
+   
 
     .img-prof,.element2{
         display:none;
@@ -157,9 +181,38 @@ html, body{
             padding: 0;
         }
     }
+
+    .mobile-nav {
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        cursor: pointer;
+      }
+      
+      .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+      
+      .change .bar1 {
+        transform: translate(0, 11px) rotate(-45deg);
+      }
+      
+      .change .bar2 {opacity: 0;}
+      
+      .change .bar3 {
+        transform: translate(0, -11px) rotate(45deg);
+      }
 }
 
 @media (max-width: 992px){
+    .containers{
+        display: inline-block;
+    }
+
     .img-prof{
         display: block;
         width: 45%;
@@ -180,3 +233,4 @@ html, body{
         }
     }
 }
+
