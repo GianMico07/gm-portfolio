@@ -12,7 +12,9 @@
 </head>
 <body>
 
-
+<div id="preloader">
+        <img src="./img/loader.gif" alt="Loading...">
+      </div>
 
     <header class="header">
         <div class="container">
@@ -122,5 +124,13 @@
     <script>
         AOS.init();
       </script>
+
+    <script>
+    // JavaScript code to hide the preloader once the page is loaded
+    window.addEventListener('load', function () {
+  var preloader = document.getElementById('preloader');
+  preloader.classList.add('hide');
+});
+  </script>
 </body>
 </html>
